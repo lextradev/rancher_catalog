@@ -1,5 +1,6 @@
-name: Elastic 5.6 App
-version: 5.6.1-rancher1
-category: "Data Store"
+
+name: Elasticsearch Cluster 5.6.1
 description: |
-  Blah Blah
+  Elasticsearch, you know for search!
+version: 5.6.1-rancher1
+category: ELK
