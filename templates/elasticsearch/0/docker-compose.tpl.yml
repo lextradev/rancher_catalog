@@ -105,7 +105,7 @@ services:
         labels:
             io.rancher.container.start_once: true
         network_mode: none
-        image: rawmind/alpine-volume:0.0.2-1
+        image: rawmind/alpine-volume:0.0.2-2
         environment:
             - SERVICE_UID=1000
             - SERVICE_GID=1000
@@ -118,7 +118,7 @@ services:
         labels:
             io.rancher.container.start_once: true
         network_mode: none
-        image: rawmind/alpine-sysctl:0.1
+        image: rawmind/alpine-sysctl:0.1-1
         privileged: true
         environment:
             - "SYSCTL_KEY=vm.max_map_count"
