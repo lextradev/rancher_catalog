@@ -1,4 +1,4 @@
-version: '1'
+version: '2'
 catalog:
     name: Elasticsearch Cluster
     version: 5.6.1-rancher1
