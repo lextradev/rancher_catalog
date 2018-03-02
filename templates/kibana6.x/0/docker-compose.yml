@@ -3,5 +3,5 @@ services:
     kibana:
         image: docker.elastic.co/kibana/kibana:6.2.2 
         environment:
-            - elasticsearch.ur;=http://ubuntuserver.local:9200
+            - ELASTICSEARCH_URL=http://${elasticsearch_source}:9200
             - "ELASTIC_PASSWORD=MagicWord"
