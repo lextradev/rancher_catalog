@@ -35,7 +35,7 @@ catalog:
           type: "int"
           required: true
           label: "Memory limit in byte"
-          description: "Memory limit in Byte per elasticsearch container. AT LEAST double the heap size! (master nodes)"
+          description: "Memory limit in Byte per elasticsearch container. AT LEAST double the heap size!"
           default: 1073741824
 
         - variable: "VOLUME_DRIVER"
@@ -53,5 +53,5 @@ catalog:
 services:
 
   es-master:
-    scale: ${minimum_master_nodes}
+    scale: 1
 
