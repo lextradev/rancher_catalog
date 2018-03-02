@@ -1,0 +1,17 @@
+version: '2'
+catalog:
+    name: Kibana 6.2.2
+    version: 6.2.2-p-rancher1
+    description: Kibana
+
+    questions:
+      - variable: "elasticsearch_source"
+        description: "Link to elasticsearch service or stack/service"
+        label: "Elasticsearch source"
+        type: "service"
+        required: true
+services:
+
+  kibana:
+    scale: 1
+
