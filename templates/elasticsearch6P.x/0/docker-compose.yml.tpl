@@ -77,7 +77,7 @@ services:
             {{- if eq .Values.UPDATE_SYSCTL "true" -}}
                 ,es-sysctl
             {{- end}}
-        image: docker.elastic.co/elasticsearch/elasticsearch:6.2.2
+        image: docker.elastic.co/elasticsearch/elasticsearch-platinum:6.2.2
         environment:
             - "cluster.name=${cluster_name}"
             - "node.name=$${HOSTNAME}"
