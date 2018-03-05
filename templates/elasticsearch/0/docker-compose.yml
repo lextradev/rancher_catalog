@@ -22,6 +22,9 @@ services:
             - "node.ml=true"
             - "xpack.ml.enabled=true"
             - "ELASTIC_PASSWORD=MagicWord"
+        ports:
+            - 9200:9200
+            - 9300:9300
         ulimits:
             memlock:
                 soft: -1

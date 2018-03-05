@@ -1,5 +1,0 @@
-name: Elasticsearch Platinum SingleNode 6.2.2
-description: |
-  Elasticsearch, you know for search!
-version: 6.2.2-p-rancher1
-category: ELK
