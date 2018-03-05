@@ -15,6 +15,7 @@ services:
             - "bootstrap.memory_lock=true"
             - "xpack.security.enabled=false"
             - "ES_JAVA_OPTS=-Xms${node_heap_size} -Xmx${node_heap_size}"
+            - "discovery.type=single-node"
             - "discovery.zen.ping.unicast.hosts=es-master"
             - "discovery.zen.minimum_master_nodes=1"
             - "node.master=true"
