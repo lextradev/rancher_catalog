@@ -3,4 +3,6 @@ services:
     kibana:
         image: docker.elastic.co/kibana/kibana:6.2.2 
         environment:
-            - ELASTICSEARCH_URL=http://${elasticsearch_source}:9200
+            - ELASTICSEARCH_URL=http://es-master:9200
+        ports: 
+          - 5601:5601
