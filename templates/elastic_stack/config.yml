@@ -1,5 +1,5 @@
 name: Elastic Stack - Platinum SingleNode 6.2.2
 description: |
   Elasticsearch + Kibana
-version: 6.2.2-p-singlenode
+version: 6.2.2-p
 category: ELK

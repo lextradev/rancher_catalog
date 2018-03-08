@@ -59,16 +59,16 @@ services:
             - "SYSCTL_VALUE=262144"
     {{- end}}
 
-  kibana:
-    image: docker.elastic.co/kibana/kibana:6.2.2 
-    external_links:
-      - elasticsearch:elasticsearch
-    environment:
-      - ELASTICSEARCH_URL=http://elasticsearch:9200
-    ports: 
-      - 5601:5601
-    depends_on:
-      elasticsearch
+    kibana:
+      image: docker.elastic.co/kibana/kibana:6.2.2 
+      external_links:
+        - elasticsearch:elasticsearch
+      environment:
+        - ELASTICSEARCH_URL=http://elasticsearch:9200
+      ports: 
+        - 5601:5601
+      depends_on:
+        elasticsearch
 
 volumes:
   es-storage-volume:
