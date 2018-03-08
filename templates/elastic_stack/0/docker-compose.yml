@@ -3,6 +3,7 @@ services:
     elasticsearch:
         labels:
             io.rancher.scheduler.affinity:container_label_soft_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}
+            io.rancher.scheduler.affinity:host_label: elasticsearch=true
             io.rancher.container.hostname_override: container_name
             io.rancher.sidekicks: es-storage
             {{- if eq .Values.UPDATE_SYSCTL "true" -}}
@@ -36,6 +37,7 @@ services:
             - es-storage
 
     kibana:
+      io.rancher.scheduler.affinity:host_label: kibana=true
       image: docker.elastic.co/kibana/kibana:6.2.2 
       external_links:
         - elasticsearch:elasticsearch
